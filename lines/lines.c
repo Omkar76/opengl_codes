@@ -36,9 +36,8 @@ int main(int argc, char * argv[]) {
 	glutCreateWindow("Lines");
 	init();
 	glutDisplayFunc(lineSegment);
-	glutMainLoop();
-
 	const GLubyte * str = glGetString(GL_VERSION);
 	printf("Opengl version %s\n", str);
+	glutMainLoop();
 	
 }
